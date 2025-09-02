@@ -1,0 +1,10 @@
+numpy
+pandas
+pydicom
+opencv-python-headless
+scikit-image
+torch
+torchvision
+monai
+tqdm
+matplotlib
