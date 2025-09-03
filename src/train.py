@@ -77,7 +77,7 @@ def save_val_overlays(batch_imgs, batch_pred, run_dir: Path, tag: str, max_save:
 # ---------------------------- CLI -------------------------- #
 def parse_args():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--images", default="data/raw/images", help="DICOM folder")
+    ap.add_argument("--images", default="data/processed/images", help="DICOM folder")
     ap.add_argument("--masks",  default="data/processed/masks_indexed", help="Indexed masks folder (0..7)")
     ap.add_argument("--splits", default="data/splits.json", help="JSON with train/val/test lists")
     ap.add_argument("--num_classes", type=int, default=8, help="background + 7 classes")
