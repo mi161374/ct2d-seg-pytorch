@@ -9,7 +9,6 @@ cycler
 debugpy
 decorator
 executing
-filelock
 fonttools
 fsspec
 gitdb
@@ -30,14 +29,10 @@ matplotlib
 matplotlib-inline
 mpmath
 nest-asyncio
-networkx
-numpy
-opencv-python-headless
 packaging
 pandas
 parso
 pexpect
-pillow
 platformdirs
 prompt_toolkit
 protobuf
@@ -53,7 +48,6 @@ python-dateutil
 pytz
 PyYAML
 pyzmq
-requests
 scikit-image
 scipy
 sentry-sdk
@@ -61,14 +55,13 @@ setuptools
 six
 smmap
 stack-data
-sympy
 tifffile
 tornado
 tqdm
 traitlets
 typing-inspection
-typing_extensions
 tzdata
 urllib3
 wandb
 wcwidth
+opencv-python-headless
