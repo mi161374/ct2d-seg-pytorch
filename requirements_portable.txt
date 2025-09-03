@@ -28,7 +28,6 @@ lazy_loader
 MarkupSafe
 matplotlib
 matplotlib-inline
-monai
 mpmath
 nest-asyncio
 networkx
