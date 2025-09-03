@@ -1,5 +1,4 @@
 annotated-types
-appnope
 asttokens
 certifi
 charset-normalizer
