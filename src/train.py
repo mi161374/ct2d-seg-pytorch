@@ -167,12 +167,14 @@ def main():
         tr_loss = 0.0
 
         for img, mask in dl_tr:
-            img, mask = img.to(device), mask.to(device)
+            img, mask = img.to(device)
+            mask.to(device)
+            mask1 = mask.unsqueeze(1)
             opt.zero_grad(set_to_none=True)
 
             with autocast(device_type=device_type, enabled=args.amp):
                 logits = model(img)             # (N,C,H,W)
-                loss = loss_fn(logits, mask)    # Dice + CE
+                loss = loss_fn(logits, mask1)    # Dice + CE
 
             if scaler.is_enabled():
                 scaler.scale(loss).backward()
