@@ -1,0 +1,124 @@
+JOB 49255016 starting on ng10610
+Thu Sep  4 15:08:10 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.148.08             Driver Version: 570.148.08     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          Off |   00000000:81:00.0 Off |                    0 |
+| N/A   36C    P0             58W /  400W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+torch 2.7.1 cuda? True CUDA build 12.6
+GPU: NVIDIA A100-SXM4-40GB
+torchvision 0.22.1
+cv2 4.12.0
+monai 1.5.0
+wandb: WARNING Changes to your `wandb` environment variables will be ignored because your `wandb` session has already started. For more information on how to modify your settings with `wandb.init()` arguments, please refer to https://wandb.me/wandb-init.
+wandb: Tracking run with wandb version 0.21.2
+wandb: W&B syncing is set to `offline` in this directory. Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Run data is saved locally in /home/mi161374/projects/def-gduque/mi161374/ct2d-seg-pytorch/outputs/unet_bs4_lr5e4_20250904_150810/wandb/offline-run-20250904_151527-k5swmidy
+Train=180  Val=60  Device=cuda
+[001/80] train_loss=2.3721  val_loss=2.4827  mdice=0.0632  (114.5s)
+[002/80] train_loss=1.5698  val_loss=1.5025  mdice=0.2431  (2.3s)
+[003/80] train_loss=1.1614  val_loss=1.0954  mdice=0.3673  (1.9s)
+[004/80] train_loss=0.9340  val_loss=0.8868  mdice=0.4754  (2.3s)
+[005/80] train_loss=0.7735  val_loss=0.7747  mdice=0.5915  (2.2s)
+[006/80] train_loss=0.6520  val_loss=0.7105  mdice=0.5351  (1.8s)
+[007/80] train_loss=0.5757  val_loss=0.6397  mdice=0.6532  (2.2s)
+[008/80] train_loss=0.5329  val_loss=0.6597  mdice=0.5810  (2.1s)
+[009/80] train_loss=0.4884  val_loss=0.5695  mdice=0.6453  (2.1s)
+[010/80] train_loss=0.4712  val_loss=0.4593  mdice=0.7350  (2.3s)
+[011/80] train_loss=0.4465  val_loss=0.4451  mdice=0.7318  (2.0s)
+[012/80] train_loss=0.4226  val_loss=0.5576  mdice=0.6511  (2.1s)
+[013/80] train_loss=0.4058  val_loss=0.4158  mdice=0.7566  (2.4s)
+[014/80] train_loss=0.3990  val_loss=0.5026  mdice=0.6730  (2.1s)
+[015/80] train_loss=0.3821  val_loss=0.3942  mdice=0.7596  (2.3s)
+[016/80] train_loss=0.3779  val_loss=0.4349  mdice=0.7148  (1.7s)
+[017/80] train_loss=0.3626  val_loss=0.4276  mdice=0.7360  (1.7s)
+[018/80] train_loss=0.3601  val_loss=0.3795  mdice=0.7632  (2.1s)
+[019/80] train_loss=0.3585  val_loss=0.4724  mdice=0.7052  (2.2s)
+[020/80] train_loss=0.3525  val_loss=0.3739  mdice=0.7709  (2.2s)
+[021/80] train_loss=0.3418  val_loss=0.3592  mdice=0.7831  (2.6s)
+[022/80] train_loss=0.3337  val_loss=0.3393  mdice=0.7932  (2.3s)
+[023/80] train_loss=0.3298  val_loss=0.3326  mdice=0.8000  (2.1s)
+[024/80] train_loss=0.3233  val_loss=0.3522  mdice=0.7871  (1.7s)
+[025/80] train_loss=0.3184  val_loss=0.3994  mdice=0.7358  (1.8s)
+[026/80] train_loss=0.3081  val_loss=0.3118  mdice=0.8165  (1.8s)
+[027/80] train_loss=0.3024  val_loss=0.3236  mdice=0.8133  (2.1s)
+[028/80] train_loss=0.2909  val_loss=0.3112  mdice=0.8153  (2.3s)
+[029/80] train_loss=0.2756  val_loss=0.3151  mdice=0.8113  (2.1s)
+[030/80] train_loss=0.2737  val_loss=0.2897  mdice=0.8384  (2.2s)
+[031/80] train_loss=0.2630  val_loss=0.3113  mdice=0.8145  (2.0s)
+[032/80] train_loss=0.2561  val_loss=0.3396  mdice=0.7918  (2.1s)
+[033/80] train_loss=0.2636  val_loss=0.2999  mdice=0.8254  (2.2s)
+[034/80] train_loss=0.2491  val_loss=0.2676  mdice=0.8505  (2.1s)
+[035/80] train_loss=0.2516  val_loss=0.3264  mdice=0.7942  (2.1s)
+[036/80] train_loss=0.2430  val_loss=0.2878  mdice=0.8286  (1.9s)
+[037/80] train_loss=0.2364  val_loss=0.2669  mdice=0.8537  (2.1s)
+[038/80] train_loss=0.2267  val_loss=0.2519  mdice=0.8612  (2.0s)
+[039/80] train_loss=0.2293  val_loss=0.3961  mdice=0.7466  (2.2s)
+[040/80] train_loss=0.2290  val_loss=0.2499  mdice=0.8630  (2.3s)
+[041/80] train_loss=0.2195  val_loss=0.2402  mdice=0.8666  (2.3s)
+[042/80] train_loss=0.2199  val_loss=0.6198  mdice=0.5807  (2.2s)
+[043/80] train_loss=0.2183  val_loss=0.2876  mdice=0.8339  (1.8s)
+[044/80] train_loss=0.2133  val_loss=0.3301  mdice=0.7913  (2.0s)
+[045/80] train_loss=0.2156  val_loss=0.6191  mdice=0.6114  (2.0s)
+[046/80] train_loss=0.2093  val_loss=0.3374  mdice=0.7835  (1.8s)
+[047/80] train_loss=0.2061  val_loss=0.2268  mdice=0.8770  (2.3s)
+[048/80] train_loss=0.2136  val_loss=0.2728  mdice=0.8417  (2.2s)
+[049/80] train_loss=0.2019  val_loss=0.3981  mdice=0.7554  (2.3s)
+[050/80] train_loss=0.1908  val_loss=0.2959  mdice=0.8112  (1.9s)
+[051/80] train_loss=0.1939  val_loss=0.2935  mdice=0.8317  (2.0s)
+[052/80] train_loss=0.1915  val_loss=0.3077  mdice=0.8099  (2.2s)
+[053/80] train_loss=0.1977  val_loss=0.3196  mdice=0.8004  (1.7s)
+[054/80] train_loss=0.1888  val_loss=0.3526  mdice=0.7721  (1.8s)
+[055/80] train_loss=0.1829  val_loss=0.2251  mdice=0.8835  (2.1s)
+[056/80] train_loss=0.1832  val_loss=0.2140  mdice=0.8869  (2.1s)
+[057/80] train_loss=0.1768  val_loss=0.3880  mdice=0.7571  (2.1s)
+[058/80] train_loss=0.1747  val_loss=0.2040  mdice=0.8951  (2.1s)
+[059/80] train_loss=0.1707  val_loss=0.2422  mdice=0.8594  (2.3s)
+[060/80] train_loss=0.1892  val_loss=0.2497  mdice=0.8671  (1.9s)
+[061/80] train_loss=0.1782  val_loss=0.2196  mdice=0.8840  (2.5s)
+[062/80] train_loss=0.1750  val_loss=0.2872  mdice=0.8213  (2.3s)
+[063/80] train_loss=0.1658  val_loss=0.2210  mdice=0.8851  (2.1s)
+[064/80] train_loss=0.1652  val_loss=0.2240  mdice=0.8748  (2.1s)
+[065/80] train_loss=0.1644  val_loss=0.6196  mdice=0.6231  (2.0s)
+[066/80] train_loss=0.1610  val_loss=0.2506  mdice=0.8551  (2.0s)
+[067/80] train_loss=0.1599  val_loss=0.2150  mdice=0.8887  (2.3s)
+[068/80] train_loss=0.1588  val_loss=0.2745  mdice=0.8399  (2.3s)
+[069/80] train_loss=0.1551  val_loss=0.2701  mdice=0.8463  (1.8s)
+[070/80] train_loss=0.1541  val_loss=0.2488  mdice=0.8573  (2.1s)
+[071/80] train_loss=0.1499  val_loss=0.2078  mdice=0.8903  (2.0s)
+[072/80] train_loss=0.1499  val_loss=0.2172  mdice=0.8820  (2.4s)
+[073/80] train_loss=0.1453  val_loss=0.1857  mdice=0.9112  (2.1s)
+[074/80] train_loss=0.1494  val_loss=0.2038  mdice=0.8932  (2.2s)
+[075/80] train_loss=0.1428  val_loss=0.1873  mdice=0.9102  (2.2s)
+[076/80] train_loss=0.1430  val_loss=0.2759  mdice=0.8333  (2.0s)
+[077/80] train_loss=0.1527  val_loss=0.1893  mdice=0.9111  (2.2s)
+[078/80] train_loss=0.1410  val_loss=0.2682  mdice=0.8421  (2.2s)
+[079/80] train_loss=0.1615  val_loss=0.2381  mdice=0.8633  (1.7s)
+[080/80] train_loss=0.1400  val_loss=0.2018  mdice=0.8981  (1.7s)
+Best mean Dice (no bg): 0.9112
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: epoch ▁▁▁▁▂▃▃▃▃▃▄▄▄▄▄▄▄▄▅▅▅▅▅▅▅▆▆▆▆▆▆▆▇▇▇▇▇███
+wandb: 
+wandb: Run summary:
+wandb: epoch 80
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/mi161374/projects/def-gduque/mi161374/ct2d-seg-pytorch/outputs/unet_bs4_lr5e4_20250904_150810/wandb/offline-run-20250904_151527-k5swmidy
+wandb: Find logs at: /home/mi161374/projects/def-gduque/mi161374/ct2d-seg-pytorch/outputs/unet_bs4_lr5e4_20250904_150810/wandb/offline-run-20250904_151527-k5swmidy/logs
+DONE. Outputs in /home/mi161374/projects/def-gduque/mi161374/ct2d-seg-pytorch/outputs/unet_bs4_lr5e4_20250904_150810
