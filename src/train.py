@@ -167,9 +167,11 @@ def main():
         tr_loss = 0.0
 
         for img, mask in dl_tr:
-            img, mask = img.to(device)
-            mask.to(device)
-            mask1 = mask.unsqueeze(1)
+            img  = img.to(device, non_blocking=True)
+            mask = mask.to(device, non_blocking=True).long()
+            if img.ndim == 3:             # safety: [B,H,W] -> [B,1,H,W]
+                img = img.unsqueeze(1)
+            mask1 = mask.unsqueeze(1)  
             opt.zero_grad(set_to_none=True)
 
             with autocast(device_type=device_type, enabled=args.amp):
@@ -201,10 +203,15 @@ def main():
 
         with torch.no_grad():
             for i, (img, mask) in enumerate(dl_va):
-                img, mask = img.to(device), mask.to(device)
+                img  = img.to(device, non_blocking=True)
+                mask = mask.to(device, non_blocking=True).long()
+                if img.ndim == 3:
+                    img = img.unsqueeze(1)
+                mask1 = mask.unsqueeze(1)
+
                 with autocast(device_type=device_type, enabled=args.amp):
                     logits = model(img)
-                    loss = loss_fn(logits, mask)
+                    loss = loss_fn(logits, mask1)
                 va_loss += loss.item() * img.size(0)
 
                 pred = logits.softmax(1).argmax(1)  # (N,H,W)
